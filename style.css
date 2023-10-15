@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+/* --------------CSS For Section ------------ */
+section{
+  padding: 10rem;
+}
+/*n-------navbar--------*/
+
+.navbar {
+background-color: rgba(0, 229, 255, 0.35);
+position: absolute;
+top: 3px;
+left: 0;
+right: 0;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: space-evenly;
+padding: 20px 10px;
+z-index: 1000;
+border: solid 2px;
+border-radius: 30px;
+
+}
+.font {
+  color: black;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.font:hover{
+  transform: scale(1.3);
+
+}
+/**************** Proflie Pic****************/
+#profile_pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+  border: 2px solid rgb(154, 10, 10);
+  border-radius: 60%;
+  }
+.profile {
+text-align: center;
+position: relative;
+margin-top: 0px;
+}
+
+#download {
+  position: absolute;
+    /* background-color: #14ed8e; */
+    color: #4216169c;
+    width: 100%;
+    height: auto;
+    /* right: 35%; */
+    margin-top: 30px;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 18px;
+    border-radius: 20px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-evenly;
+}
+#download a{
+  color: white;
+  border: solid #be0c0c 3px;
+  border-radius: 14px;
+  padding: 5px;
+}
+
+#download a:hover {
+  background-color: #0787e2; /* Change this to your desired hover background color */
+  transform: scale(1.1);
+}
+/* ------font style-----*/
+
+h1 {
+  font-family: 'Young Serif', serif;
+  font-size: 30px;
+  margin-top: 7px;
+  color: white;
+}
+p {
+  font-family: 'Noto Serif NP Hmong', serif;
+  font-size: 21px;
+  color: white;
+}
+/* ------video style-----*/
+#videop {
+
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: (0,0,0,0.5);
+  background-blend-mode: overlay;
+}
+
+#vdoply {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+/* ------media-----*/
+@media screen and (max-width: 485px) {
+  .profile {
+    text-align: center;
+    position: absolute;
+    margin-top: 0px;
+    right: 0;
+    left: 0;}
+
+  #profile_pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+    border: 2px solid rgb(255 255 255);
+    border-radius: 60%;
+      }
+  h1 {
+    font-family: 'Young Serif', serif;
+    font-size: 20px;
+    margin-top: 7px;
+    color: rgb(255, 255, 255);
+      }
+  p {
+    font-family: 'Noto Serif NP Hmong', serif;
+    font-size: 15px;
+    color: white;
+      }
+}

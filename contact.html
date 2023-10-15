@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!----------------css File--------------------->
+    <link rel="stylesheet" href="contact.css">
+    <!----------------fontawesome----------------------------->
+    <script src="https://kit.fontawesome.com/86bf641f71.js" crossorigin="anonymous"></script>
+    <!----------------google fonts---------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@500&family=Young+Serif&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-------------------Navbar Right side----------------------------->
+    <div class="navbar"> 
+        <a href="Index.html" class="font"><i class="fa-solid fa-house-user"></i><span>Home</span></a>
+        <a href="about.html" class="font"><i class="fa-solid fa-face-smile-beam"></i><span>About</span></a> 
+        <a href="contact.html" class="font"><i class="fa-solid fa-paper-plane"></i><span>Contact</span></a>
+    </div>
+ 
+    <!-------------------Personal Info----------------------------->
+
+    <div class="container">
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
